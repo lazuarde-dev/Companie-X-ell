@@ -79,3 +79,7 @@
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
+
+.mask-image-gradient {  -webkit-mask-image: linear-gradient(to top, transparent, black 70%);  mask-image: linear-gradient(to top, transparent, black 70%);}
+
+.mask-image-gradient1 {  -webkit-mask-image: linear-gradient(to top, transparent, black 40%);  mask-image: linear-gradient(to top, transparent, black 40%);}
