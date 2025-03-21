@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>chayr</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css "
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css "
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <script src="script.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      h1 {
+        font-family: "Poppins";
+      }
+      p {
+        font-family: "Poppins";
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="icon" href="chayr logo.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-white">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="chayr logo.png" class="h-8 scale-150" alt="ZaraZ Logo" />
+        </a>
+
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-800 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+
+          <!-- Icon Profile -->
+          <div class="flex items-center pl-7 space-x-4">
+            <img
+              id="avatarButton"
+              type="button"
+              data-dropdown-toggle="userDropdown"
+              data-dropdown-placement="bottom-start"
+              class="w-10 h-10 rounded-full cursor-pointer"
+              src="Photo Profile.png"
+              alt="User dropdown"
+            />
+
+            <!-- Dropdown menu -->
+            <div
+              id="userDropdown"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+            >
+              <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                <div>Bonnie Green</div>
+                <div class="font-medium truncate">name@flowbite.com</div>
+              </div>
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="avatarButton"
+              >
+                <li>
+                  <a
+                    href="profile.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Settings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Earnings</a
+                  >
+                </li>
+              </ul>
+              <div class="py-1">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Sign out</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <button
+            data-collapse-toggle="navbar-search"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
+          <div class="relative mt-3 md:hidden">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded md:bg-transparent md:p-0 font-bold md:dark:text-gray-800"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="collection.html"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Collection</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Inspiration</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Who We Are</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Stories</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Clients</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- detail product -->
+     <div class="row">
+        <div class="container mt-14">
+            <div class="col-md-12">
+                <div class="woocommerce-notice-wrapper"></div>
+                <div class="max-w-6xl mx-auto p-6 bg-white rounded-lg ">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <!-- Gambar Produk -->
+                      <div>
+                        <img
+                          id="mainImage"
+                          src="https://www.vinoti.com/wp-content/uploads/2023/11/Coffe-Table-Isamu-Noguchi.jpg"
+                          alt="Product Image"
+                          class="w-full h-auto rounded-lg"
+                        />
+                        <div class="flex gap-4 mt-4">
+                          <img
+                            src="https://www.vinoti.com/wp-content/uploads/2023/11/Coffe-Table-Isamu-Noguchi.jpg"
+                            class="w-20 h-20 cursor-pointer rounded-lg border border-gray-300 hover:border-gray-500"
+                            onclick="changeImage(this)"
+                          />
+                          <img
+                            src="https://www.vinoti.com/wp-content/uploads/2023/11/Coffe-Table-1-Isamu-Noguchi.jpg"
+                            class="w-20 h-20 cursor-pointer rounded-lg border border-gray-300 hover:border-gray-500"
+                            onclick="changeImage(this)"
+                          />
+                          <img
+                            src="https://www.vinoti.com/wp-content/uploads/2023/11/Coffe-Table-Ambiance.jpg"
+                            class="w-20 h-20 cursor-pointer rounded-lg border border-gray-300 hover:border-gray-500"
+                            onclick="changeImage(this)"
+                          />
+                          <img
+                            src="https://www.vinoti.com/wp-content/uploads/2023/11/Coffe-Table-Isamu-Noguchi-dimension.jpg"
+                            class="w-20 h-20 cursor-pointer rounded-lg border border-gray-300 hover:border-gray-500"
+                            onclick="changeImage(this)"
+                          />
+                        </div>
+                      </div>
+              
+                      <!-- Detail Produk -->
+                      <div>
+                        <h1 class="text-5xl font-semibold">Isamu Noguchi Coffee Table</h1>
+                        <div class="leading-7 mt-10">
+                            <p class="text-gray-600 mt-2">Type: Coffee table</p>
+                        <p class="text-gray-600">
+                          Top Table: Heavy glass, 19 mm, ground rounded edges
+                        </p>
+                        <p class="text-gray-600">
+                          Base: Solid ash in black, walnut/maple, lacquered finish
+                        </p>
+                        <p class="text-gray-600">
+                            Origin of wood: Ash (Fraxinus excelsior), walnut (Juglans nigra) & maple (Acer platanoides)
+                          </p>
+                        <p class="text-gray-600">Dimension: W 280 x D 930 x H 400 mm</p>
+                        <p class="mt-8 text-gray-600"><strong>Category:</strong> Wooden</p>
+                        </div>
+                        <button
+                          class="mt-10 bg-green-600 text-white py-2 px-6 rounded-sm font-medium hover:bg-green-700 transition"
+                        >
+                          Ask Inquiry
+                        </button>
+              
+                        <!-- Ikon Media Sosial -->
+                        <div class="flex space-x-4 mt-6">
+                          <a href="#" class="text-gray-600 hover:text-gray-800"
+                            ><i class="fab fa-facebook"></i
+                          ></a>
+                          <a href="#" class="text-gray-600 hover:text-gray-800"
+                            ><i class="fab fa-linkedin"></i
+                          ></a>
+                          <a href="#" class="text-gray-600 hover:text-gray-800"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+     </div>
+    
+
+    <script>
+      function changeImage(img) {
+        document.getElementById("mainImage").src = img.src;
+      }
+    </script>
+  </body>
+</html>

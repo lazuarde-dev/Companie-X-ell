@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>zaraz</title>
+    <title>chayr</title>
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
@@ -11,7 +11,12 @@
       href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css "
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css "
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
     <script src="script.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -21,17 +26,24 @@
       p {
         font-family: "Poppins";
       }
+
+      @import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
+    <link rel="icon" href="chayr logo.png" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="bg-[#3e38ce]">
+    <nav class="bg-white">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="Logo zaraz.png" class="h-8 scale-150" alt="ZaraZ Logo" />
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="chayr logo.png" class="h-8 scale-150" alt="ZaraZ Logo" />
         </a>
+
         <div class="flex md:order-2">
           <button
             type="button"
@@ -85,6 +97,64 @@
               placeholder="Search..."
             />
           </div>
+
+          <!-- Icon Profile -->
+          <div class="flex items-center pl-7 space-x-4">
+            <img
+              id="avatarButton"
+              type="button"
+              data-dropdown-toggle="userDropdown"
+              data-dropdown-placement="bottom-start"
+              class="w-10 h-10 rounded-full cursor-pointer"
+              src="Photo Profile.png"
+              alt="User dropdown"
+            />
+
+            <!-- Dropdown menu -->
+            <div
+              id="userDropdown"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+            >
+              <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                <div>Bonnie Green</div>
+                <div class="font-medium truncate">name@flowbite.com</div>
+              </div>
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="avatarButton"
+              >
+                <li>
+                  <a
+                    href="profile.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Settings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Earnings</a
+                  >
+                </li>
+              </ul>
+              <div class="py-1">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Sign out</a
+                >
+              </div>
+            </div>
+          </div>
+
           <button
             data-collapse-toggle="navbar-search"
             type="button"
@@ -110,6 +180,7 @@
             </svg>
           </button>
         </div>
+
         <div
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-search"
@@ -147,23 +218,44 @@
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:text-[#CDFF00]"
+                class="block py-2 px-3 text-gray-500 rounded md:bg-transparent md:p-0 font-bold md:dark:text-gray-800"
                 aria-current="page"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#CDFF00] md:p-0"
-                >About</a
+                href="collection.html"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Collection</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#CDFF00] md:p-0"
-                >Event</a
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Inspiration</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Who We Are</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Stories</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded hover:bg-gray-500 md:hover:bg-transparent md:hover:text-gray-800 md:p-0"
+                >Clients</a
               >
             </li>
           </ul>
@@ -172,96 +264,85 @@
     </nav>
 
     <!-- Hero -->
-    <section class="text-gray-600 body-font bg-[#3e38ce]">
+    <section
+      class="p-6 justify-center mx-auto items-center dark:bg-gray-100 dark:text-gray-800"
+    >
       <div
-        class="container mx-auto flex px-5 pb-32 pt-32 md:flex-row flex-col items-center text-left"
+        class="container grid gap-6 mx-auto text-center lg:grid-cols-2 xl:grid-cols-5"
       >
         <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          class="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:bg-gray-50"
         >
-          <p class="ml-9 mb-3 font-semibold text-[#42bc5d]">ZARAZ BY ZAKYRAS</p>
-          <h1
-            class="ml-8 title-font sm:text-6xl text-7xl mb-4 font-bold text-neutral-100"
-          >
-            Unlock goks <br />experiences <br />with Zaraz
+          <span class="block mb-2 font-bold dark:text-violet-600">chayr</span>
+          <h1 class="text-5xl font-extrabold dark:text-gray-900">
+            Aesthetic And Durability Executive
           </h1>
-          <p
-            class="ml-8 mb-8 text-2xl font-medium leading-relaxed text-neutral-100"
-          >
-            Bukan sekedar datang ke event, tapi rasain pengalaman <br />hadir ke
-            event-event yang gak bakal kamu lupakan!
+          <p class="my-8">
+            We Have a wide variety of executive office furniture to cater your
+            needs.
           </p>
 
-          <div class="ml-8 flex lg:flex-row md:flex-col">
-            <button
-              class="bg-black transition-all duration-500 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-800 focus:outline-none"
-            >
-              <svg
-                xmlns="whhttp://www.w3.org/2000/svg"
-                fill="white"
-                class="w-6 h-6"
-                viewBox="0 0 512 512"
+          <form novalidate="" action="" class="self-stretch space-y-3">
+            <div>
+              <label for="name" class="text-sm sr-only">Your name</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Your name"
+                class="w-full rounded-md focus:ring focus:dark:ring-violet-600 dark:border-gray-300"
+              />
+            </div>
+            <div>
+              <label for="lastname" class="text-sm sr-only"
+                >Email address</label
               >
-                <path
-                  d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
-                ></path>
-              </svg>
-              <span class="ml-4 flex items-start flex-col leading-none">
-                <span class="text-xs text-white mb-1">GET IT ON</span>
-                <span class="title-font text-white font-medium"
-                  >Google Play</span
+              <input
+                id="lastname"
+                type="text"
+                placeholder="Email address"
+                class="w-full rounded-md focus:ring focus:dark:ring-violet-600 dark:border-gray-300"
+              />
+            </div>
+            <div class="">
+              <a href="sign-up.html">
+                <button
+                  type="button"
+                  class="w-full py-2 font-semibold rounded dark:bg-violet-600 dark:text-gray-50"
                 >
-              </span>
-            </button>
-            <button
-              class="bg-black transition-all duration-500 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-800 focus:outline-none"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="white"
-                class="w-6 h-6"
-                viewBox="0 0 305 305"
-              >
-                <path
-                  d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"
-                ></path>
-                <path
-                  d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"
-                ></path>
-              </svg>
-              <span class="ml-4 flex items-start flex-col leading-none">
-                <span class="text-xs text-white mb-1">Download on the</span>
-                <span class="title-font text-white font-medium">App Store</span>
-              </span>
-            </button>
-          </div>
+                  Join the waitlist
+                </button>
+              </a>
+            </div>
+          </form>
         </div>
-        <div class="lg:max-w-xl lg:w-full mr-8 md:w-64 w-5/6 bg-transparent">
-          <img class="object-cover object-center rounded w-fit mask-image-gradient" alt="hero" src="Surprised.png" />
-        </div>
+        <img
+          src="image 8.png"
+          alt=""
+          class="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500"
+        />
       </div>
     </section>
 
-    <!-- Information -->
+    <!-- Features/Service -->
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20">
           <p
             class="text-base mb-5 font-medium leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-indigo-700"
           >
-            WHY CHOOSE ZARAZ.CO.ID?
+            Why Choose <span class="font-semibold">chayr?</span>
           </p>
           <h1
             class="sm:text-5xl text-4xl font-bold title-font text-gray-800 mb-4"
           >
-            Get the best deals on the <br />coolest events with ZaraZ
+            Get the best deals for <br />the coolest room with chayr
           </h1>
           <p
             class="text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-800"
           >
-            Pengen alasan buat ngajakin gebetan, reuni bareng atau healing lagi
-            <br />butuh waktu sendiri, atau party meriah di konser musik
-            favorit? Semua <br />yang seru ada di ZaraZ.co.id
+            Pengen punya ruangan dengan sofa dan carpet mewah,
+            <br />butuh harga affordable, dan terpercaya? <br />yang mewah ada
+            di <span class="font-medium">chayr.co.id</span>
           </p>
         </div>
         <div
@@ -272,7 +353,7 @@
               class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
             >
               <img
-                src="https://cdn.prod.website-files.com/642c0d3997f6a13b42d2797c/6448a61ef04e2556fa084abd_icon-digital_sticker.svg"
+                src="https://cdn-icons-png.flaticon.com/512/638/638151.png"
                 alt=""
               />
             </div>
@@ -292,7 +373,7 @@
               class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
             >
               <img
-                src="https://cdn.prod.website-files.com/642c0d3997f6a13b42d2797c/6448a61ffca86bf2f226509c_icon-vip_access.svg"
+                src="https://cdn-icons-png.flaticon.com/512/10230/10230386.png"
                 alt=""
               />
             </div>
@@ -312,7 +393,7 @@
               class="w-20 h-20 inline-flex items-center justify-center rounded-full text-indigo-500 mb-5 flex-shrink-0"
             >
               <img
-                src="https://cdn.prod.website-files.com/642c0d3997f6a13b42d2797c/6448a61f9e63b8793e847365_icon-resell_ticket.svg"
+                src="https://cdn-icons-png.flaticon.com/512/1599/1599910.png"
                 alt=""
               />
             </div>
@@ -331,121 +412,204 @@
       </div>
     </section>
 
-    <!-- Originazer -->
-    <section class="text-gray-600 body-font text-left">
-      <div
-        class="container mx-auto flex px-10 py-24 md:flex-row flex-col items-center"
-      >
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-          <img
-            class="object-cover object-center rounded mask-image-gradient1"
-            alt="hero"
-            src="jomok.png"
-          />
-        </div>
-        <div
-          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+    <!-- Product -->
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2
+          class="font-manrope font-bold text-3xl min-[400px]:text-4xl text-black mb-8 max-lg:text-center"
         >
-          <p class="mb-3 font-medium text-[#3e38ce] leading-relaxed">
-            ORGANIZER
-          </p>
-          <h1
-            class="title-font sm:text-5xl text-4xl mb-4 font-bold text-gray-800"
-          >
-            Buat event seru, proses
-            <br class="hidden lg:inline-block" />
-            gampang! Yuk, mulai <br class="hidden lg:inline-block" />
-            disini!
-          </h1>
-          <p class="mb-8 font-normal text-gray-800 leading-relaxed">
-            Pengen buat arisan atau reunian? <br />Pengen launching komunitas
-            kamu? <br />
-            Pengen buat conference atau konser musik?
-          </p>
-          <div class="relative group">
-            <div
-              class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg blur opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"
-            ></div>
-            <div
-              class="relative px-5 py-4 bg-indigo-700 ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6"
-            >
-              <div class="space-y-12">
-                <p class="text-white text-lg font-semibold">
-                  Buat Event Sekarang!
-                </p>
+          Available Products
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <a href="detail-product.html" class="max-w-[384px] mx-auto">
+            <div class="w-full max-w-sm aspect-square">
+              <img
+                src="https://www.vinoti.com/wp-content/uploads/2023/11/Fauteuil-de-Salon-768x768.jpg"
+                alt="cream image"
+                class="w-full h-full rounded-xl object-cover"
+              />
+            </div>
+            <div class="mt-5 flex items-center justify-between">
+              <div class="">
+                <h6 class="font-medium text-xl leading-8 text-black mb-2">
+                  Fauteuil de Salon
+                </h6>
+                <h6 class="font-semibold text-xl leading-8 text-indigo-600">
+                  $74.99
+                </h6>
+              </div>
+              <button
+                class="p-2 min-[400px]:p-4 rounded-full bg-white border border-gray-300 flex items-center justify-center group shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-400 hover:bg-gray-50"
+              >
+                <svg
+                  class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                >
+                  <path
+                    d="M12.6892 21.125C12.6892 22.0225 11.9409 22.75 11.0177 22.75C10.0946 22.75 9.34632 22.0225 9.34632 21.125M19.3749 21.125C19.3749 22.0225 18.6266 22.75 17.7035 22.75C16.7804 22.75 16.032 22.0225 16.032 21.125M4.88917 6.5L6.4566 14.88C6.77298 16.5715 6.93117 17.4173 7.53301 17.917C8.13484 18.4167 8.99525 18.4167 10.7161 18.4167H18.0056C19.7266 18.4167 20.587 18.4167 21.1889 17.9169C21.7907 17.4172 21.9489 16.5714 22.2652 14.8798L22.8728 11.6298C23.3172 9.25332 23.5394 8.06508 22.8896 7.28254C22.2398 6.5 21.031 6.5 18.6133 6.5H4.88917ZM4.88917 6.5L4.33203 3.25"
+                    stroke=""
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a href="javascript:;" class="max-w-[384px] mx-auto">
+            <div class="w-full max-w-sm aspect-square">
+              <img
+                src="https://www.vinoti.com/wp-content/uploads/2023/11/Coffe-Table-Isamu-Noguchi.jpg"
+                alt="cream image"
+                class="w-full h-full rounded-xl object-cover"
+              />
+            </div>
+            <div class="mt-5 flex items-center justify-between">
+              <div class="">
+                <h6 class="font-medium text-xl leading-8 text-black mb-2">
+                  Isamu Noguchi Coffee Table
+                </h6>
+                <h6 class="font-semibold text-xl leading-8 text-indigo-600">
+                  $25
+                </h6>
+              </div>
+              <button
+                class="p-2 min-[400px]:p-4 rounded-full bg-white border border-gray-300 flex items-center justify-center group shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-400 hover:bg-gray-50"
+              >
+                <svg
+                  class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                >
+                  <path
+                    d="M12.6892 21.125C12.6892 22.0225 11.9409 22.75 11.0177 22.75C10.0946 22.75 9.34632 22.0225 9.34632 21.125M19.3749 21.125C19.3749 22.0225 18.6266 22.75 17.7035 22.75C16.7804 22.75 16.032 22.0225 16.032 21.125M4.88917 6.5L6.4566 14.88C6.77298 16.5715 6.93117 17.4173 7.53301 17.917C8.13484 18.4167 8.99525 18.4167 10.7161 18.4167H18.0056C19.7266 18.4167 20.587 18.4167 21.1889 17.9169C21.7907 17.4172 21.9489 16.5714 22.2652 14.8798L22.8728 11.6298C23.3172 9.25332 23.5394 8.06508 22.8896 7.28254C22.2398 6.5 21.031 6.5 18.6133 6.5H4.88917ZM4.88917 6.5L4.33203 3.25"
+                    stroke=""
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+
+          <a href="javascript:;" class="max-w-[384px] mx-auto">
+            <div class="w-full max-w-sm aspect-square relative">
+              <img
+                src="https://www.vinoti.com/wp-content/uploads/2023/04/Petit-Repos-1.jpg"
+                alt="serum bottle image"
+                class="w-full h-full rounded-xl object-cover"
+              />
+              <span
+                class="py-1 min-[400px]:py-2 px-2 min-[400px]:px-4 cursor-pointer rounded-lg bg-gradient-to-tr from-indigo-600 to-purple-600 font-medium text-base leading-7 text-white absolute top-3 right-3 z-10"
+                >20% Off</span
+              >
+            </div>
+            <div class="mt-5 flex items-center justify-between">
+              <div class="">
+                <h6 class="font-medium text-xl leading-8 text-black mb-2">
+                  Petit Repos
+                </h6>
+                <h6 class="font-semibold text-xl leading-8 text-indigo-600">
+                  $199.99
+                </h6>
+              </div>
+              <button
+                class="p-2 min-[400px]:p-4 rounded-full bg-white border border-gray-300 flex items-center justify-center group shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-400 hover:bg-gray-50"
+              >
+                <svg
+                  class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                >
+                  <path
+                    d="M12.6892 21.125C12.6892 22.0225 11.9409 22.75 11.0177 22.75C10.0946 22.75 9.34632 22.0225 9.34632 21.125M19.3749 21.125C19.3749 22.0225 18.6266 22.75 17.7035 22.75C16.7804 22.75 16.032 22.0225 16.032 21.125M4.88917 6.5L6.4566 14.88C6.77298 16.5715 6.93117 17.4173 7.53301 17.917C8.13484 18.4167 8.99525 18.4167 10.7161 18.4167H18.0056C19.7266 18.4167 20.587 18.4167 21.1889 17.9169C21.7907 17.4172 21.9489 16.5714 22.2652 14.8798L22.8728 11.6298C23.3172 9.25332 23.5394 8.06508 22.8896 7.28254C22.2398 6.5 21.031 6.5 18.6133 6.5H4.88917ZM4.88917 6.5L4.33203 3.25"
+                    stroke=""
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Special -->
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2
+          class="font-manrope font-bold text-3xl min-[400px]:text-4xl text-black mb-8 max-lg:text-center"
+        >
+          Our Specialization
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <a href="javascript:;" class="max-w-[384px] mx-auto">
+            <div class="w-full max-w-sm">
+              <img
+                src="https://images.unsplash.com/photo-1572025442646-866d16c84a54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="cream image"
+                class="w-full h-full rounded-lg object-cover"
+              />
+            </div>
+            <div class="mt-5 flex items-center justify-center">
+              <div class="">
+                <h6 class="font-bold text-3xl leading-8 text-black mb-2">
+                  Office
+                </h6>
               </div>
             </div>
-          </div>
+          </a>
+
+          <a href="javascript:;" class="max-w-[384px] mx-auto">
+            <div class="w-full max-w-sm">
+              <img
+                src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="cream image"
+                class="w-full h-full rounded-lg object-cover"
+              />
+            </div>
+            <div class="mt-5 flex items-center justify-center">
+              <div class="">
+                <h6 class="font-bold text-3xl leading-8 text-black mb-2">
+                  Education
+                </h6>
+              </div>
+            </div>
+          </a>
+
+          <a href="javascript:;" class="max-w-[384px] mx-auto">
+            <div class="w-full max-w-sm">
+              <img
+                src="https://images.unsplash.com/photo-1565307528294-f70f3c7094e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="cream image"
+                class="w-full h-full rounded-lg object-cover"
+              />
+            </div>
+            <div class="mt-5 flex items-center justify-center">
+              <div class="">
+                <h6 class="font-bold text-3xl leading-8 text-black mb-2">
+                  Healt
+                </h6>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Testimoni -->
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-2">
-          <p
-            class="text-base mb-7 font-medium leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-indigo-700"
-          >
-            DIPERCAYA OLEH BANYAK EVENT ORGANIZER
-          </p>
-          <h1
-            class="sm:text-5xl text-4xl font-bold title-font mb-4 text-gray-900"
-          >
-            Dari acara-acara keren yang <br />udah kita buat sejauh ini,
-            <br />kamu suka yang mana nih?
-          </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-800">
-            Dari acara komunitas, karaoke bareng, sampai konser musik, event apa
-            <br />yang pengen kamu datengin?
-          </p>
-        </div>
-        <div class="wrapper">
-          <div class="item item1">
-            <img
-              src="https://cdn.prod.website-files.com/642c0d3997f6a13b42d2797c/643b97d770dd8a776a03ee3b_logo-inkonser.svg"
-              alt=""
-            />
-          </div>
-          <div class="item item2">
-            <img
-              src="https://cdn.prod.website-files.com/642c0d3997f6a13b42d2797c/643b97d747b29db06ce93127_logo-intudo.svg"
-              alt=""
-            />
-          </div>
-          <div class="item item3">
-            <img
-              src="https://cdn.prod.website-files.com/642c0d3997f6a13b42d2797c/643b97d7eaddad3201c0bb99_logo-indorelawan.svg"
-              alt=""
-            />
-          </div>
-          <div class="item item4">
-            <img
-              src="https://cdn.prod.website-files.com/642c0d3997f6a13b42d2797c/643b97d7297b1a5db9402c3b_logo-panoramamedia.svg"
-              alt=""
-            />
-          </div>
-          <div class="item item5">
-            <img src="wtf.png" alt="" />
-          </div>
-          <div class="item item6">
-            <img
-              src="https://cdn.prod.website-files.com/642c0d3997f6a13b42d2797c/643b97d71052bb8650ddfdf4_logo-emotion.svg"
-              alt=""
-            />
-          </div>
-          <div class="item item7">
-            <img
-              src="https://soundsfest.com/wp-content/uploads/2024/04/Logo.png"
-              alt=""
-            />
-          </div>
-          <div class="item item8">
-            <img src="https://pestasemalamminggu.com/logo-circle.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- FAQ -->
     <section class="py-24">
@@ -753,14 +917,14 @@
           <div
             class="col-span-full mb-10 2xl:col-span-2 lg:mb-0 flex items-center flex-col 2xl:items-start"
           >
-            <img class="w-24" src="Logo zaraz.png" alt="" />
+            <img class="w-24" src="chayr logo.png" alt="" />
             <div
               class="flex items-center justify-between w-full max-w-xl mx-auto flex-col 2xl:flex-col 2xl:items-start"
             >
               <p
                 class="py-8 text-lg text-white font-normal lg:max-w-xs text-center lg:text-left"
               >
-                Goks event made easy!
+                Goks room made easy!
               </p>
             </div>
             <div
@@ -774,7 +938,7 @@
               <p
                 class="text-base font-normal lg:max-w-xs text-center lg:text-left"
               >
-                hello@zaraz.co.id
+                hello@chayr.co.id
               </p>
               <p
                 class="text-base font-normal lg:max-w-xs text-center lg:text-left"
@@ -798,7 +962,7 @@
               <p
                 class="text-sm font-normal lg:max-w-xs text-center lg:text-left"
               >
-                +62 853 1111 1010
+                +62 812 8888 7777
               </p>
             </div>
           </div>
@@ -813,17 +977,27 @@
               </li>
               <li class="mb-6">
                 <a href="javascript:;" class="text-slate-200 hover:text-white"
-                  >About</a
+                  >Collection</a
                 >
               </li>
               <li class="mb-6">
                 <a href="javascript:;" class="text-slate-200 hover:text-white"
-                  >Pricing</a
+                  >Inspiration</a
                 >
               </li>
-              <li>
+              <li class="mb-6">
                 <a href="javascript:;" class="text-slate-200 hover:text-white"
-                  >Features</a
+                  >Who We Are</a
+                >
+              </li>
+              <li class="mb-6">
+                <a href="javascript:;" class="text-slate-200 hover:text-white"
+                  >Stories</a
+                >
+              </li>
+              <li class="mb-6">
+                <a href="javascript:;" class="text-slate-200 hover:text-white"
+                  >Clients</a
                 >
               </li>
             </ul>
@@ -913,7 +1087,7 @@
             class="flex items-center justify-center flex-col lg:justify-between lg:flex-row"
           >
             <span class="text-sm text-white"
-              >©<a href="https://pagedone.io/">ZARAZ</a> 2024, All rights
+              >©<a href="https://pagedone.io/">CHAYR</a> 2024, All rights
               reserved.</span
             >
             <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0">
